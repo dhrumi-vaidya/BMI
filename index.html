@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>BMI Calculator</h1>
+      <form action="">
+        <table id="table">
+          <tr>
+            <td><label for="weight"> Weight (Range : 5kg - 640kg ) </label></td>
+            <td>
+              <input
+                type="number"
+                id="weight"
+                placeholder="KG"
+                step="0.1"
+                min="5"
+                max="640"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="Height"> Height (Range : 54cm - 280cm )</label></td>
+            <td>
+              <input
+                type="number"
+                id="Height"
+                placeholder="CM"
+                step="0.1"
+                min="54"
+                max="280"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <em> Note: </em>
+              <mark
+                >Entering input outside of this range might produce false
+                results</mark
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                type="submit"
+                id="buttonsubmit"
+                onclick="calculateBMI(); this.onclick=null"
+              >
+                Submit
+              </button>
+            </td>
+            <td>
+              <button type="reset" id="buttonrefresh">Refresh</button>
+            </td>
+          </tr>
+          <tr>
+            <td id="result"></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <script src="/JS/script.js"></script>
+  </body>
+</html>
