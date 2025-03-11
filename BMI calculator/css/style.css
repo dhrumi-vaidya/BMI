@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:hover {
+  transition: all 0.3s ease-in-out;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #d6d6d6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #464646;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: rgb(39, 39, 39);
+}
+input,
+button {
+  padding: 6px;
+  margin-bottom: 8px;
+}
+input::placeholder {
+  float: right;
+  padding-right: 8px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
