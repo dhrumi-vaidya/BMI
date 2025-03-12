@@ -51,7 +51,8 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-button {
+#buttonsubmit,
+#buttonrefresh {
   border: none;
   margin-top: 10px;
   padding: 10px;
@@ -65,4 +66,8 @@ button {
 }
 #buttonrefresh {
   background-color: rgb(185, 245, 95);
+}
+#buttonsubmit:hover,
+#buttonrefresh:hover {
+  cursor: pointer;
 }
